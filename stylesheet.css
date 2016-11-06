@@ -83,7 +83,11 @@ section{
 	}
 	#yugiInfo, #yugiLista{
 		width:90%;
+		float:none;
 	}
+	/*#yugiInfo{
+		height:400px;
+	}*/
 }
 @media screen and (max-width:900px){
 	.container section{
