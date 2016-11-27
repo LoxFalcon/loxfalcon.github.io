@@ -2,52 +2,147 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Yu-Gi-Oh! Card Creator</title>
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link href="https://fonts.googleapis.com/css?family=Orbitron|Russo+One|Telex" rel="stylesheet">
-	<script	  src="https://code.jquery.com/jquery-3.1.1.min.js"
-			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-			  crossorigin="anonymous"></script>
-	<script src="script.js" ></script>
+	<title>Mi portafolio front-end</title>
+	
+	<link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+	<!--CDN Bootstrap V4 beta import-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
 </head>
-<body>	
-	<header>
-		<h1>¡Yu-Gi-Oh!</h1>
-		<h2>¡Es hora del duelo!</h2>
-	</header>
-	<section id="seleccion">	
-		<div id="yugiInfo">
-			<div><h3>Descripción de la Carta</h3></div><br>
-			<div id="descripcion">
-			<form action="#" name="yugiDesc">
-				<label for="nombre">
-					Nombre de la carta: 
-				</label>
-				<input type="text"  name="nombre"> <br><br>
-				<label for="descripcion">Descripción:</label>
-				<textarea name="descripcion" cols="25" rows ="5" ></textarea><br><br><br>
-				<label for="imagenDesc">Imagen:</label><br><br>
-				<br id="boton"><br><button name="nose" type="button" value="wtf">Crear Carta</button>
-			</form>
-			</div>
-		</div>
-		
-		<div id="yugiLista">
-			<div><h3>Lista de Imagenes disponibles</h3></div>
-			<div id="lista">
+<body>
+
+	<nav>
+		<div class="container" style="padding-top:20px">
+			<ul>
+				<li><a href="#">Logotipo</a></li>
+				<div id="right">
+					<li><a href="#">Bio</a></li>
+					<li><a href="#">Skills</a></li>
+					<li><a href="#">Portfolio</a></li>
+					<li><a href="#">Contact</a></li>
+				</div>
 				
+			</ul>
+		</div>
+	</nav>
+	<header>
+		<div class="container">
+			<h1>Luis Regino Hernández Noriega</h1>
+			<p>Webpage portfolio</p>
+		</div>
+	</header>
+	
+	<section id="perfil">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<img src="img/imagen-perfil.jpeg" alt="" class="img-thumbnail">
+				</div>
+				<div class="col-md-9">
+					<h2>Bio</h2>
+					<p>My name is Luis Regino Hernández Noriega, I'm a Computer Systems Engineering student at Instituto Tecnológico de Veracruz, currently in my 7th semester. I'm a passionate problem solver and programmer who loves taking on challenges.</p>
+					<p></p>
+				</div>
 			</div>
 		</div>
-		<div id="limpiar"></div>
 	</section>
-<div class="limpiar"></div>
-	<section id="agregados">		
-		<div id="cartas">
-			<h3>Lista de Cartas Creadas</h3>
+
+	<section id="services">
+		<div class="container">
+			<h2 class="titulo2">My Skills</h2>
+			<div class="row">
+				<div class="col-md-3">
+					<img src="img/html.png" alt="">
+					<h4>HTML 5</h4>
+					<p>I am able to structure a webpage layout using modern HTML5 tags and providing semantics to a webpage.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="img/css.png" alt="">
+					<h4>CSS 3</h4>
+					<p>Every webpage needs a good-looking style, and making use of CSS 3 allows me to embellish the webpages I create.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="img/js.png" alt="">
+					<h4>JavaScript</h4>
+					<p>Interaction is the key to a successful webpage, and this scripting language permits me to animate my webpages and interact with the user.</p>
+				</div>
+				<div class="col-md-3">
+					<img src="img/github.png" alt="">
+					<h4>GitHub</h4>
+					<p>Without a repository hosting service, web development would be a slow and painful task, using this service allows me to speed up the process immensely.</p>
+				</div>
+			</div>
 		</div>
 	</section>
+
+	<section>
+		<div class="row">
+			<div class="container">
+				<h2 class="titulo2" align="center">Projects</h2>
+				<div class="col-md-4">
+					<div class="card text-xs-center">
+					 <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/google2.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Google</h4>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card text-xs-center">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/google.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Atom</h4>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card text-xs-center">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/github2.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Github</h4>
+					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+					<img style="height: 300px; display: block;" src="img/gato.png" data-holder-rendered="true">
+				</div>
+				<div class="col-md-8">
+					<h2>Using GitHub rules!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente explicabo ipsa odit, beatae molestiae ducimus nostrum accusamus, dolorem modi aliquid reiciendis enim sequi adipisci, mollitia rem porro, sint in!</p>
+					<br>
+					<button class="btn btn-outline-primary">Visit my GitHub</button>
+				</div>
+			</div>
+		</div>
+	</section>
+	
 	<footer>
-		<h2>Hecho por Luis Regino Hernández Noriega</h2>
+		
 	</footer>
+	<div class="post-footer">
+		
+	</div>
+
+
+	<!--JavaScripts import Bootstrap and jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>	
 </body>
 </html>
