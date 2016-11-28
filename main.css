@@ -11,6 +11,7 @@ ul{
     overflow: hidden;
 }
 #right{
+	padding-top:10px;
 	display:inline;
 	float:right;
 }
@@ -46,12 +47,16 @@ section{
 }
 
 footer{
-	height: 300px;
+	padding:2em;
+	/*height: 300px;*/
 	background-color: #616161;
 }
 
 .post-footer{
-	height: 50px;
+	text-align: center;
+	color:white;
+	padding-top: 15px;
+	height:50px;
 	background-color: #212121;
 }
 
@@ -63,4 +68,45 @@ footer{
 #services{
 	background-color: #ECEFF1;
 	text-align: center;
+}
+#contactInfo{
+	color:white;
+}
+#contactInfo a{
+	color:white;
+	text-decoration: underline;
+}
+#perfil{
+	text-align:justify;
+}
+.cardText{
+	text-align: justify;
+}
+.carousel-inner > .item > img {
+    margin: 0 auto;
+    min-height: 400px
+}
+
+#myCarousel>ol {
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 775px){
+	header{
+		padding:30px;
+	}
+}
+@media screen and (max-width: 767px){
+	#bioText{
+		margin-top: 20px;
+	}	
+	#bioText h2{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 575px){
+	#services{
+		padding-left:3em;
+		padding-right:3em;
+	}
 }

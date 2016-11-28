@@ -7,22 +7,22 @@
 	<link rel="stylesheet" href="main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-
+	
 	<!--CDN Bootstrap V4 beta import-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+	<link rel="stylesheet" href="jquery-ui-1.12.1.custom/jquery-ui.css">
 
 </head>
 <body>
-
 	<nav>
 		<div class="container" style="padding-top:20px">
-			<ul>
-				<li><a href="#"><img src="img/CEPC.png" alt="Logotipo" width="50px"></a></li>
+			<ul class="topnav" id="myTopnav">
+				<li><a href="https://www.facebook.com/CEPC.ITV/" target="_blank"><img src="img/CEPC.png" alt="Logotipo" width="50px"></a></li>
 				<div id="right">
-					<li><a href="#">Bio</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Portfolio</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#" id="bioButton">Bio</a></li>
+					<li><a href="#" id="skillsButton">Skills</a></li>
+					<li><a href="#" id="portfolioButton">Portfolio</a></li>
+					<li><a href="#" id="contactButton">Contact</a></li>
 				</div>
 				
 			</ul>
@@ -38,13 +38,19 @@
 	<section id="perfil">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-3">
-					<img src="img/imagen-perfil.jpeg" alt="" class="img-thumbnail">
+				<div class="col-md-4 col-xs-12">
+					<img src="img/concurso.jpg" alt="" class="img-thumbnail">
 				</div>
-				<div class="col-md-9">
+				<div id="bioText" class="col-md-8 col-xs-12">
 					<h2>Bio</h2>
-					<p>My name is Luis Regino Hernández Noriega, I'm a Computer Systems Engineering student at Instituto Tecnológico de Veracruz, currently in my 7th semester. I'm a passionate problem solver and programmer who loves taking on challenges.</p>
-					<p></p>
+					<p>My name is Luis Regino Hernández Noriega, I'm 22 years old and I'm a Computer Systems Engineering student at Instituto Tecnológico de Veracruz, currently in my 7th semester. I'm a passionate problem solver and programmer who loves taking on challenges.</p>
+					</div>
+					<div class="col-lg-8 col-md-12 col-xs-12">
+					<p>
+					I have participated in 3 ACM-ICPC Mexico & Caribbean Regional contests, the most recent one was held at Instituto Politécnico Nacional in Ciudad de México and my team and I got  13th place!
+					</p>
+					<p>Recently I've been developing my web skills by learning HTML, CSS, JavaScript and some other web frameworks, because I'm pursuing a full stack developer job at an IT company.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -54,22 +60,22 @@
 		<div class="container">
 			<h2 class="titulo2">My Skills</h2>
 			<div class="row">
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<img src="img/html.png" alt="">
 					<h4>HTML 5</h4>
 					<p>I am able to structure a webpage layout using modern HTML5 tags and providing semantics to a webpage.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<img src="img/css.png" alt="">
 					<h4>CSS 3</h4>
 					<p>Every webpage needs a good-looking style, and making use of CSS 3 allows me to embellish the webpages I create.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<img src="img/js.png" alt="">
 					<h4>JavaScript</h4>
 					<p>Interaction is the key to a successful webpage, and this scripting language permits me to animate my webpages and interact with the user.</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-6 col-xs-12">
 					<img src="img/github.png" alt="">
 					<h4>GitHub</h4>
 					<p>Without a repository hosting service, web development would be a slow and painful task, using this service allows me to speed up the process immensely.</p>
@@ -78,37 +84,70 @@
 		</div>
 	</section>
 
-	<section>
-		<div class="row">
-			<div class="container">
-				<h2 class="titulo2" align="center">Projects</h2>
-				<div class="col-md-4">
+	<section id="projects">
+		<div class="container">
+		<div class="row"><div class="col-xs-12"><h2 class="titulo2" align="center">Projects</h2></div></div>
+		
+			<div class="row">			
+				
+				<div class="col-lg-3 col-md-4 col-xs-12">
 					<div class="card text-xs-center">
-					 <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/google2.png" data-holder-rendered="true">
+					 <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/cardcreator.png" data-holder-rendered="true">
 					  <div class="card-block">
-					    <h4 class="card-title">Google</h4>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					    <h4 class="card-title">Yu-Gi-Oh!&reg; Card Creator</h4>
+					    <p class="card-text">Create and customize your own Yu-Gi-Oh!&reg; cards and build your own Deck.</p>
+					    <a href="Yu-Gi-Oh/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
 					  </div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-3 col-md-4 col-xs-12">
 					<div class="card text-xs-center">
-					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/google.png" data-holder-rendered="true">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/spotify.png" data-holder-rendered="true">
 					  <div class="card-block">
-					    <h4 class="card-title">Atom</h4>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					    <h4 class="card-title">Spotify&reg; Web Client!</h4>
+					    <p class="card-text">Search and listen to your favorite songs available on Spotify with this website.</p>
+					    <a href="spotify/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
 					  </div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-lg-3 col-md-4 col-xs-12">
 					<div class="card text-xs-center">
-					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/github2.png" data-holder-rendered="true">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/responsive.png" data-holder-rendered="true">
 					  <div class="card-block">
-					    <h4 class="card-title">Github</h4>
-					    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-					    <a href="#" class="btn btn-primary">Go somewhere</a>
+					    <h4 class="card-title">Web Responsiveness</h4>
+					    <p class="card-text">Take a look at this simple responsive website using CSS3 media queries.</p>
+					    <a href="responsive/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-xs-12">
+					<div class="card text-xs-center">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/physics.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Box2D Physics Engine</h4>
+					    <p class="card-text">Watch a demonstration of the Box2D engine power with a collision simulation.</p>
+					    <a href="box2d/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-0"></div>
+				<div class=" col-lg-3 col-md-4 col-xs-12">
+					<div class="card text-xs-center">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/blog.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Static Blog</h4>
+					    <p class="card-text">Visit my first attempt at a responsive static blog, using basic HTML and CSS 3 with media queries to style it!</p>
+					    <a href="box2d/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
+					  </div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-4 col-xs-12">
+					<div class="card text-xs-center">
+					  <img class="card-img-top" data-src="holder.js/100px180/" alt="100%x180" style="height: 140px; width: 100%; display: block;" src="img/pokedex.png" data-holder-rendered="true">
+					  <div class="card-block">
+					    <h4 class="card-title">Pokédex</h4>
+					    <p class="card-text">Check one of my first webpages introducing some media queries, shadows and float styles!</p>
+					    <a href="galeria/index.html" target="_blank" class="btn btn-primary">Check it out!</a>
 					  </div>
 					</div>
 				</div>
@@ -116,33 +155,105 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="github">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
-					<img style="height: 300px; display: block;" src="img/gato.png" data-holder-rendered="true">
+				<div class="col-md-4 col-xs-4">
+					<img style="width:100%;display: block;" src="img/gato.png" data-holder-rendered="true">
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8 col-xs-8">
 					<h2>Using GitHub rules!</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi sapiente explicabo ipsa odit, beatae molestiae ducimus nostrum accusamus, dolorem modi aliquid reiciendis enim sequi adipisci, mollitia rem porro, sint in!</p>
+					<p>Thanks to GitHub I was able to develop lots of projects for my career, currently a few classmates and I are working altogether on a couple of projects like a compiler, a 3D game using GLut and a very interesting web project to ease development to all our fellow web developers.</p>
 					<br>
-					<button class="btn btn-outline-primary">Visit my GitHub</button>
+					<button onclick="window.open('https://github.com/loxfalcon','_blank')" type="button" class="btn btn-outline-primary">Visit my GitHub!</button>
 				</div>
 			</div>
 		</div>
 	</section>
 	
 	<footer>
-		
+		<div class="container">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				  <ol class="carousel-indicators">
+				    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				    <li data-target="#myCarousel" data-slide-to="1"></li>
+				    <li data-target="#myCarousel" data-slide-to="2"></li>
+				  </ol>
+
+  <!-- Wrapper for slides -->
+  				<div class="carousel-inner" role="listbox">
+				    <div class="item active">
+				      <img src="img/concurso1.jpg" alt="Concurso">
+				      <div class="carousel-caption">
+				        <h3>ACM-ICPC 2016 Mexico & Caribbean Contest</h3>
+				        <p>Here I am with Fernando Jerezano, a good friend from ITVer.</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/concurso2.jpg" alt="Concurso">
+				      <div class="carousel-caption">
+				        <h3>ACM-ICPC 2016 Mexico & Caribbean Contest</h3>
+				        <p>With my team, just a couple of minutes before the start of the practice contest.</p>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <img src="img/concurso3.jpg" alt="Concurso">
+				      <div class="carousel-caption">
+				        <h3>ACM-ICPC 2016 Gran Premio</h3>
+				        <p>My team FastFingers lml, before the start of "Gran Premio" 2016 contest, which defined the qualified teams.</p>
+				      </div>
+				    </div>
+  				</div>
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			</div> 
+				<!--<div class="col-xs-3 col-sm-0"></div>
+				<div class="col-sm-4 col-xs-6">
+					<img class="img-thumbnail" style="max-width:100%; display:inline-block;" src="img/imagen-perfil.jpeg" alt="">
+				</div>-->
+
+				<div id="contactInfo" class="col-sm-8 col-xs-12">
+					<h3>Contact Info</h3>
+					<p><strong>Name:</strong> Luis Regino Hernández Noriega <br>
+					<strong>Age:</strong> 22 years old <br>
+					<strong>E-mail:</strong> luishdeznoriega@gmail.com <br>
+					<strong>Semester:</strong> 7th<br>
+					<strong>School:</strong> Instituto Tecnológico de Veracruz<br> <br>
+					<strong><a href="https://github.com/loxfalcon" target="_blank">GitHub Page</a></strong></p>
+				</div>
+
+			</div>
+		<!--<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<img class="img-thumbnail" style="width:300px; display:block;" src="img/concurso.jpg" alt="" data-holder-rendered="true">
+				</div>
+				<div id="contactInfo" class="col-sm-8">
+					<h3>Contact Info</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maxime fugit ratione assumenda recusandae? Dolor consectetur non eos, possimus dignissimos necessitatibus provident omnis error numquam, quos deserunt inventore soluta pariatur.</p>
+				</div>
+			</div>
+		</div>-->
 	</footer>
 	<div class="post-footer">
-		
+		<p>Luis Regino Hernández Noriega &copy;</p>
 	</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 
 	<!--JavaScripts import Bootstrap and jQuery-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>	
+	<script src="funciones.js"></script>
 </body>
 </html>

@@ -27,7 +27,7 @@ section{
 	text-align: center;
 }
 #yugiInfo, #yugiLista{
-	height:550px;
+	height:560px;
 	margin:5px;
 	display: inline-block;
 	padding:20px;
@@ -35,6 +35,9 @@ section{
 	background-color: #CCDFCC;
 	width:46%;
 	border-radius: .4em;
+}
+#yugiLista{
+	margin-left: 30px;
 }
 #cartas{
 	margin:5px;

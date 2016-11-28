@@ -28,7 +28,6 @@ $(document).ready(function(){
 		var name = $('input').val();
 		var desc = $('textarea').val();
 		var imgSrc = $('.imagenDescripcion').attr('src');
-		console.log("\""+name+"\"");
 		if(name==null||name.length==0) {
 			alert("Por favor, introduzca un nombre para la carta"); 
 			return;
@@ -39,11 +38,11 @@ $(document).ready(function(){
 		}
 		var fichaNueva =  	'<div class="fichaCarta">\
 							 	<div class="imagenCarta">\
-							 		<img src="+imgSrc+" alt="Imagen" />\
+							 		<img src="'+imgSrc+'" alt="Imagen" />\
 							 	</div>\
 							 	<div class="datosCarta"><br>\
-							 		<p><strong>Nombre: </strong>"+name+"</p>\
-							 		<p><strong>Descripción: </strong>"+desc+"</p>\
+							 		<p><strong>Nombre: </strong>'+name+'</p>\
+							 		<p><strong>Descripción: </strong>'+desc+'</p>\
 							 	</div>\
 								<div id="limpiar"></div>\
 							</div>'
